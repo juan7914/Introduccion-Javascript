@@ -8,7 +8,7 @@ objetos*/
 
 var numero1= 5;
 var numero2= 2;
-alert(numero1+numero2);
+//alert(numero1+numero2);
 
 /* tipos de operadores
 asignacion
@@ -243,9 +243,61 @@ var meses = ['Enero','Febrero', 'Marzo','Abril','Mayo','junio','Julio','Agosto',
 for(var i = 0; i < meses.length; i++){   
     if(meses[i] == 'junio' ){
         continue;
-    }   
+    } if(meses [i] == 'diciembre'){
+        break;
+    }  
 }
 document.write(meses[i]);
 document.write('<br>'); 
+
+//una suma sin aplicar una funcion
+var numero1 = 10;
+var numero2 = 5;
+var resultado = numero1 + numero2;
+document. write(resultado);
+document.write('<br>');
+
+var numero1 = 7;
+var numero2 = 8;
+var resultado = numero1 + numero2;
+document. write(resultado);
+document.write('<br>');
+
+// estructura de una funcion
+/*function nombre (argumento 1,..... argumento n){
+    //codigo que se ejecuta
+}*/
+
+function suma (numero1, numero2){
+    document.write(numero1 + numero2);
+    document.write('<br>');
+}
+
+suma(29,32);
+suma(10, 34);
+suma(12, 14);
+
+//regla de oro mi funcion solo debe ejecutar una sola cosa 'return' exmple:
+
+function suma (numero1, numero2){
+    var resultado = numero1 + numero2;
+    return(resultado);
+}
+
+document.write(suma(29,32));
+document.write('<br>');
+
+// podemos guardar mi funcion en una variable asi:
+
+var suma = function(numero1, numero2){
+    return numero1 * numero2;
+    
+}
+document.write(suma(9,3));
+
+//funcion autoinvocada nos sirve para ejecutar la funcion sin llamarla y proteger el codigo example: 
+(function(){
+    alert('hola mundo');
+}());
 
 
