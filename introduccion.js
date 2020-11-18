@@ -240,12 +240,10 @@ document.write('<br>');
 var meses = ['Enero','Febrero', 'Marzo','Abril','Mayo','junio','Julio','Agosto',
              'Septiembre','Octubre','Noviembre','Diciembre'];
 
-for(var i = 0; i < meses.length; i++){   
-    if(meses[i] == 'junio' ){
+for(var i = 0; i < 11; i++){   
+    if(meses[i] === 'julio' ){
         continue;
-    } if(meses [i] == 'diciembre'){
-        break;
-    }  
+    } 
 }
 document.write(meses[i]);
 document.write('<br>'); 
